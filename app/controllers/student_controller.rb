@@ -1,5 +1,8 @@
 class StudentsController < ApplicationController
+ 
   def index
-    @students = Student.all
+    @students = Student.all 
+    render "students/index.html"
   end
+
 end
